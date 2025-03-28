@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Contact1 from "./components/Contact1";
+
+// import Contact from "./components/Contact";
+// import {useEffect} from 'react'
+
+// import FormPractice from "./components/FormPractice"
+
+
 
 function App() {
+
+// Case 1 : run on every render
+// useEffect(() => {
+//   alert('hey there i will run on every render')
+// })
+
+// Case 2 : run on only first render
+  // useEffect(() => {
+  //   alert('Welcome to my Portfolio')
+  // }, [])
+
+  // Case 3 : run only when certain values are changed
+  // useEffect(() => {
+  //   alert('color changed')
+  // }, [color])
+  
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="background z-0">
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Contact1 />
     </div>
+    // <div>
+    //   <FormPractice />
+    // </div>
   );
 }
 
