@@ -8,13 +8,14 @@ import redux from '../assists/redux.png'
 import mongo from '../assists/mongo.png'
 import 'aos/dist/aos.css'
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState({});
   const skillRefs = useRef({});
 
-  const skills = [
+  // Wrap skills array in useMemo to prevent unnecessary re-renders
+  const skills = useMemo(() => [
     { name: 'HTML', image: html },
     { name: 'CSS', image: css },
     { name: 'JAVASCRIPT', image: javascript },
@@ -23,7 +24,7 @@ const Skills = () => {
     { name: 'NODE JS', image: node },
     { name: 'MONGO DB', image: mongo },
     { name: 'REDUX', image: redux }
-  ];
+  ], []); // Empty dependency array ensures this is only created once
 
   useEffect(() => {
     const observers = {};
@@ -50,9 +51,7 @@ const Skills = () => {
         observer.disconnect();
       });
     };
-  }, [skills]);
-
-  
+  }, []); // Remove skills from dependencies as it's now memoized
 
   return (
     <div name="skills" className="w-full h-screen">
@@ -75,7 +74,6 @@ const Skills = () => {
                   hover:scale-110
                   ${isVisible[skill.name] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
                 `}
-                
               >
                 <img src={skill.image} alt={`${skill.name} icon`} className="w-20 mx-auto" />
                 <p className="my-4">{skill.name}</p>
