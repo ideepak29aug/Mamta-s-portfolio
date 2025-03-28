@@ -65,7 +65,7 @@ const Skills = () => {
         <div className="w-full py-8 grid grid-cols-2 gap-4 sm:grid-cols-4 text-center">
           {skills.map((skill, index) => (
             <div
-              key={skill.name}
+              key={index}
               ref={el => skillRefs.current[skill.name] = el}
               className="group relative"
             >

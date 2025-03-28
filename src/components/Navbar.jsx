@@ -81,19 +81,19 @@ function Navbar() {
         <ul>
           <li className='flex justify-between items-center px-4 w-40 h-14 bg-blue-500 ml-[-100px] hover:ml-0 duration-300'>
             <a className='flex justify-between items-center w-full text-gray-300 '
-              href="https://www.linkedin.com/in/mamta-kumawat-7397292a4/" target='_blank'>Linkedin <FaLinkedin size={30} /></a>
+              href="https://www.linkedin.com/in/mamta-kumawat-7397292a4/" rel="noreferrer" target='_blank'>Linkedin <FaLinkedin size={30} /></a>
           </li>
           <li className='flex justify-between items-center px-4 w-40 h-14 bg-[#333333] ml-[-100px] hover:ml-0 duration-300'>
             <a className='flex justify-between items-center w-full text-gray-300 '
-              href="https://github.com/Mamtakmt" target='_blank'>Github <FaGithub size={30} /></a>
+              href="https://github.com/Mamtakmt" rel="noreferrer" target='_blank'>Github <FaGithub size={30} /></a>
           </li>
           <li className='flex justify-between items-center px-4 w-40 h-14 bg-[#6fc2b0] ml-[-100px] hover:ml-0 duration-300'>
             <a className='flex justify-between items-center w-full text-gray-300 '
-              href={`mailto:${email}`} target='_blank'>Email <HiOutlineMail size={30} /></a>
+              href={`mailto:${email}`} rel="noreferrer" target='_blank'>Email <HiOutlineMail size={30} /></a>
           </li>
           <li className='flex justify-between items-center px-4 w-40 h-14 bg-[#565f69] ml-[-100px] hover:ml-0 duration-300'>
             <a className='flex justify-between items-center w-full text-gray-300 '
-              href="https://drive.google.com/file/d/1alc4x5ZJwk_Vo7JWQlV1Ia73vJMrziJF/view?usp=sharing" target='_blank'>Resume <BsFillPersonLinesFill size={30} /></a>
+              href="https://drive.google.com/file/d/1alc4x5ZJwk_Vo7JWQlV1Ia73vJMrziJF/view?usp=sharing" rel="noreferrer" target='_blank'>Resume <BsFillPersonLinesFill size={30} /></a>
           </li>
         </ul>
       </div>

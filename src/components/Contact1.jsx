@@ -43,7 +43,7 @@ const Contact1 = () => {
                     <form className='flex flex-col max-w-[600px] w-full'>
                         <div className='pb-8'>
                             <p className='text-gray-300 font-bold border-b-4 border-orange-400 inline text-4xl'>Contact</p>
-                            <p className='py-4 text-gray-300'>// Submit the form below or shoot me email - mamtakumawaton@gmail.com</p>
+                            <p className='py-4 text-gray-300'>{`// Submit the form below or shoot me email - mamtakumawaton@gmail.com`}</p>
                         </div>
 
                         {/* input fields  */}
