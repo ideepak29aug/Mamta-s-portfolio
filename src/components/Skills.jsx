@@ -51,7 +51,7 @@ const Skills = () => {
         observer.disconnect();
       });
     };
-  }, []); // Remove skills from dependencies as it's now memoized
+  }, []); 
 
   return (
     <div name="skills" className="w-full h-screen">

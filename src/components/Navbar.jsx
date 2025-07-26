@@ -53,7 +53,7 @@ function Navbar() {
 
     
     
-      <ul className={!nav ? 'hidden' : 'absolute top-full z-50 right-0 w-full h-screen sm:w-auto px-20 py-12 mobile-glassmorphism flex justify-start items-center flex-col'}>
+      <ul className={!nav ? 'hidden' : 'absolute top-full z-50 right-0 w-full h-screen sm:w-auto px-20 py-12 background  flex justify-start items-center flex-col'}>
         <li className='py-4 text-4xl'>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
